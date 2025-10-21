@@ -1,0 +1,35 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+}
+
+.logoAndTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 29px;
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 150px;
+    font-size: 18px;
+}
+
+.navbar li:hover {
+    color: red;
+}
