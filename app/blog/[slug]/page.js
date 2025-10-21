@@ -13,7 +13,7 @@ export default function BlogPost({ params }) {
   return (
     <div className="blog-post">
       <h1>Blog Topic: {slug.replaceAll("-", " ")}</h1>
-      <p>This is your blog page for `{slug}`.</p>
+      <p>This is your blog page for {slug}.</p>
     </div>
   );
 }
