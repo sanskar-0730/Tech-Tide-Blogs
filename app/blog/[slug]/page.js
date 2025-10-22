@@ -1,19 +1,10 @@
-export async function generateStaticParams() {
-  return [
-    { slug: 'first-post' },
-    { slug: 'second-post' },
-    { slug: 'my-third-blog' },
-  ];
-}
+export default async function BlogPost({ params }) {
+  const { slug } = await params;
 
-export default function BlogPost({ params }) {
-
-  const { slug } = params;
-  
   return (
     <div className="blog-post">
       <h1>Blog Topic: {slug.replaceAll("-", " ")}</h1>
-      <p>This is your blog page for `{slug}`.</p>
+      <p>This is the blog page for {slug}.</p>
     </div>
   );
 }
