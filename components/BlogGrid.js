@@ -2,6 +2,11 @@
 import { useState } from "react";
 
 export default function BlogGrid() {
+
+  function handleReadMore() {
+    alert("Coming Soon!")
+  }
+
   const [filter, setFilter] = useState("all");
 
   const posts = [
@@ -34,7 +39,7 @@ export default function BlogGrid() {
           <article key={post.id} className="blog-card fade-in">
             <h3>{post.title}</h3>
             <p>Category: {post.category}</p>
-            <button className="link-btn">Read More →</button>
+            <button onClick={handleReadMore} className="link-btn">Read More →</button>
           </article>
         ))}
       </div>
