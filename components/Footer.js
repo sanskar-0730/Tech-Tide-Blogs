@@ -1,10 +1,10 @@
-import React from 'react'
-import './Footer.css'
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <div className='footer'>Copyright 2025 &copy; <b>Tech Tide Blogs.</b> All Rights Reserved.</div>
-  )
+    <footer className="footer">
+      <div className="footer-content">
+        <h3 className="gradient-text">TechTide Blogs</h3>
+        <p>&copy; 2025 TechTide Blogs. All rights reserved.</p>
+      </div>
+    </footer>
+  );
 }
-
-export default Footer

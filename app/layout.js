@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
@@ -15,16 +15,16 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Tech Tide Blogs",
-  description: "Welcome to Tech Tide Blogs! Where Technology Moves Fast.",
+  description: "Tech Tide Blogs — Dive deep into the latest in technology and innovation.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar/>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

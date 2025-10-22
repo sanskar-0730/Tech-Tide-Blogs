@@ -1,8 +1,0 @@
-.blogs {
-    cursor: pointer;
-    transition: .4s all;
-}
-
-.blogs:hover {
-    opacity: .8;
-}
