@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Tech Tide Blogs",
-  description: "Tech Tide Blogs — Dive deep into the latest in technology and innovation.",
+  title: "TechTide Blogs",
+  description: "TechTide Blogs — Dive deep into the latest in technology and innovation.",
 };
 
 export default function RootLayout({ children }) {
